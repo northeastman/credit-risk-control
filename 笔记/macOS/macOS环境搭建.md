@@ -33,4 +33,6 @@ mkdir model # 为虚拟环境创建目录
 cd model
 python3 -m venv . # 创建虚拟环境到当前目录
 source ./bin/activate # 激活虚拟环境
+pip install jupyter -i https://mirrors.aliyun.com/pypi/simple # 安装jupyter其中包含了ipykernel、jupyter notebook、jupyter lab等工具
+jupyter lab --notebook-dir="/Users/sunjiajun/Documents/代码" # 启动Jupyter lab服务，并指定工作路径
 ```
