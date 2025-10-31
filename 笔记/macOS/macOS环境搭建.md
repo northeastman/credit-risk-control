@@ -29,10 +29,13 @@ python虚拟环境有很多种，包括 pyenv + venv、anaconda等。
 1. 全局虚拟环境，所有的项目都可以指向该虚拟环境
 2. 项目级虚拟环境，将虚拟环境放到当前项目目录下，一般情况只有当前项目使用该环境
 ```
+# 创建虚拟环境
 mkdir model # 为虚拟环境创建目录
 cd model
 python3 -m venv . # 创建虚拟环境到当前目录
 source ./bin/activate # 激活虚拟环境
+
+# 为了在ipynb中可以选择虚拟环境需要安装ipykernel
 pip install jupyter -i https://mirrors.aliyun.com/pypi/simple # 安装jupyter其中包含了ipykernel、jupyter notebook、jupyter lab等工具
 jupyter lab --notebook-dir="/Users/sunjiajun/Documents/代码" # 启动Jupyter lab服务，并指定工作路径
 ```
