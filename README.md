@@ -1,2 +1,2 @@
-# credit--risk-control
+# credit-risk-control
 信贷风控
